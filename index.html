@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fala que eu escrevo - Preguicice</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.40/dist/themes/base.css">
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.40/dist/shoelace.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+        <!-- Default theme -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+        <!-- Semantic UI theme -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+                <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <div class="container">
+
+            <canvas class="visualizer" width="700" height="100" style="display: none;"></canvas>
+            <h1>Fala que eu escrevo</h1>
+            <p class="page-description">Este é o app para pessoas com preguiça de digitar igual eu :) </p>
+           
+            <h3 class="no-browser-support">Desculpe seu navegador não tem suporte. Use um navegador mais decente.</h3>
+
+            <div class="app"> 
+               
+                <h3>Faaaaaaaala !</h3>
+                <div class="input-single">
+                    <textarea id="note-textarea" placeholder="Capture o áudio pelo microfone. Ou digite ..  Digitar não né cabeção!" rows="6"></textarea>
+                </div>         
+                
+                <button id="start-record-btn" title="Capturar áudio">
+                 <sl-icon name="mic"></sl-icon> 
+                    Capturar pelo Microfone
+                </button>
+                <button id="pause-record-btn" title="Pausar captura">
+                    <sl-icon name="mic-mute"></sl-icon> 
+                    Parar Captura
+                </button>
+                <button id="save-note-btn" title="Salvar localmente">
+                    <sl-icon name="calendar-plus"></sl-icon>     
+                    Salvar 
+                 </button> 
+                 <br><br>
+                 <button id="copy" title="Copiar para area de transfeência">
+                    <sl-icon name="back"></sl-icon>     
+                    Copiar para área de transferência
+                 </button>   
+
+
+                <p id="recording-instructions">Pressione o <strong>Capturar áudio pelo microfone</strong> para começar a diversão!</p>
+ 
+                
+                <h3>Minha lista de preguiça</h3>
+                <ul id="notes">
+                    <li>
+                        <p class="no-notes">Você não tem nada aqui</p>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+     
+
+    </body>
+</html>
+
+
