@@ -79,7 +79,7 @@ recognition.onstart = function() {
 }
 
 recognition.onspeechend = function() {
-  instructions.text('Espera um pouquinho estou terminando de transcrever o que você disse ...');
+  instructions.text('Acabei de transcrever o que você disse.');
 }
 
 recognition.onerror = function(event) {
