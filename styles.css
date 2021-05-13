@@ -14,8 +14,10 @@ button:focus {
 .container {
     max-width: 700px;
     margin: 0 auto;
-    padding: 100px 50px;
+    padding: 30px 50px;
     text-align: center;
+    position: relative; /*faz a mágina :)*/
+    min-height: 100%; /* define a altura minima*/
 }
 
 .container h1 {
@@ -100,6 +102,15 @@ canvas {
     margin-bottom: -3px;
     box-shadow: 0 -2px 4px rgb(0 0 0 / 70%), 0 3px 4px rgb(0 0 0 / 70%);
 }
+
+#footer{
+    text-align: center;
+}
+
+
+
+
+
 
 /* -- Demo ads -- */
 
