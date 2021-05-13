@@ -9,28 +9,6 @@ catch(e) {
   $('.app').hide();
 }
 
-
-var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-var voiceSelect = document.getElementById("voice");
-var source;
-var stream;
-
-var analyser = audioCtx.createAnalyser();
-analyser.minDecibels = -90;
-analyser.maxDecibels = -10;
-analyser.smoothingTimeConstant = 0.85;
-
-
-var drawVisual;
-
-var canvas = document.querySelector('.visualizer');
-var canvasCtx = canvas.getContext("2d");
-
-var intendedWidth = document.querySelector('.container').clientWidth;
-
-canvas.setAttribute('width',intendedWidth);
-
-
 var noteTextarea = $('#note-textarea');
 var instructions = $('#recording-instructions');
 var notesList = $('ul#notes');
@@ -79,7 +57,7 @@ recognition.onresult = function(event) {
 
 recognition.onstart = function() { 
   instructions.text('Opaaa! Captura ativado. Vai falando ...');
-  visualize();
+
 }
 
 recognition.onspeechend = function() {
@@ -243,42 +221,3 @@ $('#copy').on('click', function(e) {
   }
 });
 
-
-function visualize() {
-  WIDTH = canvas.width;
-  HEIGHT = canvas.height;
-  
-    analyser.fftSize = 256;
-    var bufferLengthAlt = analyser.frequencyBinCount;
-    console.log(bufferLengthAlt);
-    var dataArrayAlt = new Uint8Array(bufferLengthAlt);
-
-    canvasCtx.clearRect(0, 0, WIDTH, HEIGHT);
-
-    var drawAlt = function() {
-      drawVisual = requestAnimationFrame(drawAlt);
-
-      analyser.getByteFrequencyData(dataArrayAlt);
-
-      canvasCtx.fillStyle = 'rgb(0, 0, 0)';
-      canvasCtx.fillRect(0, 0, WIDTH, HEIGHT);
-
-      var barWidth = (WIDTH / bufferLengthAlt) * 2.5;
-      var barHeight;
-      var x = 0;
-
-      for(var i = 0; i < bufferLengthAlt; i++) {
-        barHeight = dataArrayAlt[i];
-
-        canvasCtx.fillStyle = 'rgb(' + (barHeight+100) + ',50,50)';
-        canvasCtx.fillRect(x,HEIGHT-barHeight/2,barWidth,barHeight/2);
-
-        x += barWidth + 1;
-      }
-    };
-
-    drawAlt();
-
-}
-
-visualize();
