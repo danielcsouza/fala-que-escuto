@@ -1,6 +1,6 @@
 self.addEventListener('install', function (e) {
   e.waitUntil(
-    caches.open('fala-off-v2').then(function (cache) {
+    caches.open('fala-off-v3').then(function (cache) {
       return cache.addAll([
         '/',
         '/index.html',
