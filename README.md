@@ -10,7 +10,7 @@ App para pessoas que tenham preguiça de digitar e queiram ganhar um tempinho
 ## Instalação
 
 Só clonar...<br>
-Online tem aqui [https://heuristic-easley-4bfaaa.netlify.app](https://heuristic-easley-4bfaaa.netlify.app) t
+Online tem aqui [https://heuristic-easley-4bfaaa.netlify.app](https://heuristic-easley-4bfaaa.netlify.app) 
 
 
 ## MIT License
