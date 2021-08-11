@@ -2,11 +2,24 @@
     "theme_color": "#2c4868",
     "background_color": "#6eccf5",
     "display": "fullscreen",
+    "orientation": "any",
     "scope": "/",
     "start_url": "/",
     "name": "Fala que eu Escrevo",
     "short_name": "Fala que eu Escrevo",
     "description": "App para quem quer economizar tempo, você fala e ele escreve ...",
+    "screenshots" : [
+        {
+          "src": "/img/screens/screen1.png",
+          "sizes": "1280x800",
+          "type": "image/png"
+        },
+        {
+          "src": "/img/screens/screen2.png",
+          "sizes": "750x1334",
+          "type": "image/png"
+        }
+      ],
     "icons": [
         {
             "src": "/img/android-icon-36x36.png",
