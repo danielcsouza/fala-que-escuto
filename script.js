@@ -192,13 +192,36 @@ function getAllNotes() {
     if(key.substring(0,5) == 'note-') {
       notes.push({
         date: key.replace('note-',''),
+        time: getTimeStamp(key.replace('note-','')),
         content: localStorage.getItem(localStorage.key(i))
       });
     } 
   }
+
+  //console.log("antes - ",notes);
+  function compare(a,b) {
+     return b.time - a.time;
+  }
+
+ notes.sort(compare);
+ 
+  //console.log("depois - ",notes);
   return notes;
 }
 
+
+function getTimeStamp(date)
+{
+  let myDate = date;
+  let myhour = date;
+  myDate = myDate.substr(0,10);
+  myDate = myDate.split("/");
+  let hour = myhour.substr(14,myhour.length);
+  hour = hour.split(":");
+  let newDate = new Date(myDate[2], myDate[1] - 1, myDate[0], hour[0], hour[1]);
+
+  return newDate.getTime();
+}
 
 function deleteNote(dateTime) {
   localStorage.removeItem('note-' + dateTime); 
