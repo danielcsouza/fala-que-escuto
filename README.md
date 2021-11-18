@@ -10,7 +10,10 @@ App para pessoas que tenham preguiça de digitar e queiram ganhar um tempinho
 ## Instalação
 
 Só clonar...<br>
-Online tem aqui [https://heuristic-easley-4bfaaa.netlify.app](https://heuristic-easley-4bfaaa.netlify.app)  e  aqui [https://www.microsoft.com/pt-br/p/fala-que-eu-escrevo/9pkdbt1ld4n0?activetab=pivot:overviewtab](https://www.microsoft.com/pt-br/p/fala-que-eu-escrevo/9pkdbt1ld4n0?activetab=pivot:overviewtab)
+- Online tem aqui [https://heuristic-easley-4bfaaa.netlify.app](https://heuristic-easley-4bfaaa.netlify.app)
+- E aqui [https://www.microsoft.com/pt-br/p/fala-que-eu-escrevo/9pkdbt1ld4n0?activetab=pivot:overviewtab](https://www.microsoft.com/pt-br/p/fala-que-eu-escrevo/9pkdbt1ld4n0?activetab=pivot:overviewtab)
+
+[https://www.microsoft.com/pt-br/p/fala-que-eu-escrevo/9pkdbt1ld4n0?activetab=pivot:overviewtab](https://d33wubrfki0l68.cloudfront.net/781b7832eb7bdd17912e8add88c0a245c08719b8/5489f/img/portfolio/windowsstore.png)
 
 
 ## MIT License
